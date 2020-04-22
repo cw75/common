@@ -34,7 +34,7 @@ const string kMetadataIdentifier = "ANNA_METADATA";
 const string kMetadataDelimiter = "|";
 const char kMetadataDelimiterChar = '|';
 const string kMetadataTypeCacheIP = "cache_ip";
-const unsigned kNumShortestPaths = 1;
+const unsigned kNumShortestPaths = 2;
 
 inline void split(const string& s, char delim, vector<string>& elems) {
   std::stringstream ss(s);
