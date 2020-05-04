@@ -13,10 +13,12 @@
 //  limitations under the License.
 
 #include "socket_cache.hpp"
+#include <iostream>
 
 #include <utility>
 
 zmq::socket_t& SocketCache::At(const Address& addr) {
+  std::cout << "size of cache is " + std::to_string(cache_.size()) + "\n";
   auto iter = cache_.find(addr);
   if (iter != cache_.end()) {
     return iter->second;
