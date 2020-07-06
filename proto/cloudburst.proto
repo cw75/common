@@ -170,6 +170,9 @@ message Dag {
   // colocate. Colocation is best effort, and DAG creation will still succeed
   // even if colocation fails.
   repeated string colocated = 4;
+
+  // An optional signing secret for slack-bot
+  string signing_secret = 5;
 }
 
 // A list of Values that represents the arguments for a particular function
